@@ -9,7 +9,8 @@ import 'package:http_sth_server/handlers.dart' as handlers;
 final _router = Router()
   ..get('/', handlers.rootHandler)
   ..get('/test/<message>', handlers.echoHandler)
-  ..get('/location', handlers.locationHandler);
+  ..get('/location', handlers.locationHandler)
+  ..get('/ip', handlers.ipHandler);
 
 void main(List<String> args) async {
   // Use any available host or container IP (usually `0.0.0.0`).
