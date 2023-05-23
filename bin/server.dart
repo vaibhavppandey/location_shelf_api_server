@@ -21,7 +21,7 @@ void main(List<String> args) async {
   server.idleTimeout = const Duration(seconds: 10); // timeout
   print(
       'Server listening on port ${server.port} and address: ${server.address.host}');
-  await Future.delayed(
-      const Duration(minutes: 1), server.close); // automatically close server
+  // await Future.delayed(
+  //     const Duration(minutes: 1), server.close); // automatically close server
   print("Server clolsed");
 }

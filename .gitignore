@@ -3,7 +3,6 @@
 .dart_tool/
 # don't include docker stuff for now
 .dockerignore
-Dockerfile
 
 # uninclude trash files
 **/_trash*
